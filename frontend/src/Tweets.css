@@ -1,0 +1,15 @@
+#tweets {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#tweet {
+  margin-top: 1em;
+  padding: 1em 1em;
+  border: 1px solid black;
+  width: 30%;
+  overflow-wrap: break-word;
+}
