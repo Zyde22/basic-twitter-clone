@@ -13,3 +13,7 @@
   width: 30%;
   overflow-wrap: break-word;
 }
+
+.loading {
+  margin: 5em auto;
+}

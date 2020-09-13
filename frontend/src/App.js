@@ -5,7 +5,7 @@ import Tweets from './Tweets';
 import './App.css';
 
 function createTweet(username, tweet) {
-  fetch('http://localhost:1447/api/tweet/create', {
+  fetch('/tweet/create', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

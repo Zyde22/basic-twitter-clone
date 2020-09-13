@@ -8,8 +8,7 @@ function Tweets() {
   const [tweets, setTweets] = useState(null);
 
   useEffect(() => {
-    console.log('effect');
-    fetch('http://localhost:1447/api/tweet/all')
+    fetch('/tweet/all')
       .then((d) => d.json())
       .then((response) => setTweets(response.tweets))
       .then(() => setLoading(false));
@@ -18,7 +17,7 @@ function Tweets() {
   return (
     <div>
       {loading ? (
-        <ReactLoading type="spinningBubbles"></ReactLoading>
+        <ReactLoading className="loading" type="spinningBubbles"></ReactLoading>
       ) : (
         <div id="tweets">
           {tweets.map((tweet) => (
